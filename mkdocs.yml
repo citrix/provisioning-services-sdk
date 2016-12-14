@@ -1,0 +1,11 @@
+site_name: Citrix Provisioning Services 7.12 SOAP Server Programmer's Guide
+site_description: Programmer's Guide for Citrix Provisioning Services 7.12 SOAP Server
+theme_dir: theme_multi
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+     anchorlink: True
+
+pages:
+- PVS 7.12 SOAP Server Programmer’s Guide: index.md
