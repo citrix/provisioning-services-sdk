@@ -18,16 +18,20 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
   <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/highlight.css">
   <link rel="stylesheet" href="./css/override.css" type="text/css" />
   <link rel="stylesheet" href="./css/font-awesome.css" type="text/css" />
 
   
-  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/jquery-1.10.2.min.js"></script>
+  <script src="./js/bootstrap-3.0.3.min.js"></script>
   <script src="./js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="./js/highlight.pack.js"></script>
   <script src="./js/theme.js"></script>
+  <script src="./js/base.js"></script>
   <script src="./js/custom.js"></script>
+  <script src="./js/nav.js"></script>
   <script>var base_url = '.';</script>
   <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
 
@@ -35,7 +39,7 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
   
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav" role="document" data-spy="scroll" data-target=".bs-sidebar">
 
 	<div class="header-top">
 		<div class="header-top-left">
@@ -45,10 +49,11 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
 			<ul>
 			<!--	<li class="list-inline home"><a href=".">HOME</a></li>
 				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
-			<form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
-            class="searchdocs"><a class="fa fa-search errspan" onclick="getElementById('rtd-search-form').submit()"></a></li>
-			</form>
+				<form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs"
+            class="searchdocs">
+<a class="fa fa-search errspan"></a></li>
+</form>
 				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
 			</ul>
 
@@ -61,23 +66,18 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
       <div class="wy-side-nav-search">
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-	<a class="fa fa-search" onclick="getElementById('rtd-search-form').submit()"></a>
+	<i class="fa fa-search"></i>
     <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" style="width:250px;" href=".">PVS 7.12 SOAP Server Programmer’s Guide</a>
-        
-    </li>
-<li>
-          
-        </ul>
+      <div class="wy-menu wy-menu-vertical" role="navigation" aria-label="main navigation">
+			<div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+    </ul>
+</div>
       </div>
       &nbsp;
     </nav>
@@ -113,11 +113,11 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
   </form>
 
   <div id="mkdocs-search-results">
-    Fetching search results...
+    Fetching search results.
   </div>
 
 
-               
+
             </div>
           </div>
 

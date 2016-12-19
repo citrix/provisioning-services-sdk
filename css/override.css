@@ -34,13 +34,7 @@ h1, h2, h3, h4, h5, h6{
      	font-family: 'citrixsans-bold', sans-serif;
 		font-weight:600;
 }
-h1[id]:before, h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before, h6[id]:before {
-    content: "";
-    display: block;
-    margin-top: -75px;
-    height: 75px;
-    pointer-events: none;
-}
+
 pre {
     display: block;
     padding: 9.5px;
@@ -65,15 +59,10 @@ p code {
 }
 
 nav.stickynav{
-    background-image: linear-gradient(to top,#fff,#f4f4f4);
+  background-image: none !important;
+  background: #fff !important
 }
-.toctree-l4{font-size:13px !important;color:#6d6d6d !important;}
 
-.wy-menu-vertical li.current ul li a {
-   padding: 0 2em;
-   font-size: 15px;
-   line-height: 25px;
-}
 .wy-nav-content{
   background: #fff !important;  padding:0px !important;max-width: 1000px
 }
@@ -93,7 +82,6 @@ nav.stickynav{
     position: relative;
     top: 15px;
 }
-
 
 .header-top-right{
   float: right;padding-top: 10px;padding-right: 10px
@@ -139,7 +127,7 @@ nav.stickynav{
   color: #000 !important
 }
 .wy-menu-vertical li.on a, .wy-menu-vertical li.current a{
-      color: #227be3 ;
+      color: #227be3 !important;
 }
 @media screen and (min-width: 1400px){
 .wy-nav-content {
@@ -178,10 +166,14 @@ nav.stickynav{
   border-radius: 5px !important;
   width: 100px;
   padding-top: 15px;
-  padding-bottom: 30px;
-  height: 35px;
+  padding-bottom: 30px;height: 35px
 }
 
 }
 
+.wy-menu-vertical li.current ul li a {
+   padding: 0 2em;
+   font-size: 15px;
+   line-height: 25px;
+}
 

@@ -18,6 +18,7 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
 
   <link rel="stylesheet" href="./css/theme.css" type="text/css" />
   <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/highlight.css">
   <link rel="stylesheet" href="./css/override.css" type="text/css" />
   <link rel="stylesheet" href="./css/font-awesome.css" type="text/css" />
@@ -30,16 +31,19 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
     var mkdocs_page_url = "/";
   </script>
   
-  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/jquery-1.10.2.min.js"></script>
+  <script src="./js/bootstrap-3.0.3.min.js"></script>
   <script src="./js/modernizr-2.8.3.min.js"></script>
   <script type="text/javascript" src="./js/highlight.pack.js"></script>
   <script src="./js/theme.js"></script>
-  <script src="./js/custom.js"></script> 
+  <script src="./js/base.js"></script>
+  <script src="./js/custom.js"></script>
+  <script src="./js/nav.js"></script> 
 
   
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav" role="document" data-spy="scroll" data-target=".bs-sidebar">
 
 	<div class="header-top">
 		<div class="header-top-left">
@@ -49,10 +53,11 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
 			<ul>
 			<!--	<li class="list-inline home"><a href=".">HOME</a></li>
 				<li class="list-inline support"><a href="http://support.citrix.com">SUPPORT</a></li>-->
-			<form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs" 
-            class="searchdocs"><a class="fa fa-search errspan" onclick="getElementById('rtd-search-form').submit()"></a></li>
-			</form>
+				<form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+            <li class="list-inline support"><input name="q" id="txtName" type="text" placeholder="Search SDKs"
+            class="searchdocs">
+<a class="fa fa-search errspan"></a></li>
+</form>
 				<!--<li class="list-inline"><a href="http://citrix.com/download">DOWNLOADS</a></li>-->
 			</ul>
 
@@ -65,131 +70,106 @@ https://www.citrix.com/etc/designs/citrix/icon-favicon.png">
       <div class="wy-side-nav-search">
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
-	<a class="fa fa-search" onclick="getElementById('rtd-search-form').submit()"></a>
+	<i class="fa fa-search"></i>
     <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
-          
-            <li>
-    <li class="toctree-l1 current">
-        <span class="expli"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a class="current" style="width:250px;" href=".">PVS 7.12 SOAP Server Programmer’s Guide</a>
+      <div class="wy-menu wy-menu-vertical" role="navigation" aria-label="main navigation">
+			<div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#introduction">Introduction</a></li>
         
-            <ul style="display:none">
-            
-				
-                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#introduction" style="display: inline-table;padding-left: 3px;width:240px;">Introduction</a></li>
-				<ul style="display:none">
-                
-                    <li><a class="toctree-l4" href="#using-the-soap-server-interface">Using the SOAP Server Interface</a></li>
-                
-                    <li><a class="toctree-l4" href="#client-proxy">Client Proxy</a></li>
-                
-				</ul>
-				
-            
-				
-                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#short-command-list" style="display: inline-table;padding-left: 3px;width:240px;">Short command list</a></li>
-				<ul style="display:none">
-                
-                    <li><a class="toctree-l4" href="#executeadd">ExecuteAdd</a></li>
-                
-                    <li><a class="toctree-l4" href="#executedelete">ExecuteDelete</a></li>
-                
-                    <li><a class="toctree-l4" href="#executeget">ExecuteGet</a></li>
-                
-                    <li><a class="toctree-l4" href="#executeinfo">ExecuteInfo</a></li>
-                
-                    <li><a class="toctree-l4" href="#executemacroset">ExecuteMacroSet</a></li>
-                
-                    <li><a class="toctree-l4" href="#executerun">ExecuteRun</a></li>
-                
-                    <li><a class="toctree-l4" href="#executerunbytearrayinput">ExecuteRunByteArrayInput</a></li>
-                
-                    <li><a class="toctree-l4" href="#executerunbytearrayoutput">ExecuteRunByteArrayOutput</a></li>
-                
-                    <li><a class="toctree-l4" href="#executerunwithreturn">ExecuteRunWithReturn</a></li>
-                
-                    <li><a class="toctree-l4" href="#executeset">ExecuteSet</a></li>
-                
-                    <li><a class="toctree-l4" href="#executesetlist">ExecuteSetList</a></li>
-                
-				</ul>
-				
-            
-				
-                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#commands-by-object-type" style="display: inline-table;padding-left: 3px;width:240px;">Commands by Object Type</a></li>
-				<ul style="display:none">
-                
-                    <li><a class="toctree-l4" href="#many">Many</a></li>
-                
-                    <li><a class="toctree-l4" href="#authgroup">AuthGroup</a></li>
-                
-                    <li><a class="toctree-l4" href="#ceipdata">CeipData</a></li>
-                
-                    <li><a class="toctree-l4" href="#cisdata">CisData</a></li>
-                
-                    <li><a class="toctree-l4" href="#collection">Collection</a></li>
-                
-                    <li><a class="toctree-l4" href="#device">Device</a></li>
-                
-                    <li><a class="toctree-l4" href="#disk">Disk</a></li>
-                
-                    <li><a class="toctree-l4" href="#disklocator">DiskLocator</a></li>
-                
-                    <li><a class="toctree-l4" href="#farm">Farm</a></li>
-                
-                    <li><a class="toctree-l4" href="#farmview">FarmView</a></li>
-                
-                    <li><a class="toctree-l4" href="#server">Server</a></li>
-                
-                    <li><a class="toctree-l4" href="#site">Site</a></li>
-                
-                    <li><a class="toctree-l4" href="#siteview">SiteView</a></li>
-                
-                    <li><a class="toctree-l4" href="#store">Store</a></li>
-                
-                    <li><a class="toctree-l4" href="#system">System</a></li>
-                
-                    <li><a class="toctree-l4" href="#task">Task</a></li>
-                
-                    <li><a class="toctree-l4" href="#updatetask">UpdateTask</a></li>
-                
-				</ul>
-				
-            
-				
-                <li class="toctree-l3"><span class="expcli" style="margin-left: 10px;"><i class="fa fa-plus-square-o" aria-hidden="true"></i></span><a href="#mapireturn-returncode-and-exceptiontype" style="display: inline-table;padding-left: 3px;width:240px;">MapiReturn returnCode and exceptionType</a></li>
-				<ul style="display:none">
-                
-                    <li><a class="toctree-l4" href="#executeadd_1">ExecuteAdd</a></li>
-                
-                    <li><a class="toctree-l4" href="#executedelete_1">ExecuteDelete</a></li>
-                
-                    <li><a class="toctree-l4" href="#executeget_1">ExecuteGet</a></li>
-                
-                    <li><a class="toctree-l4" href="#executeinfo_1">ExecuteInfo</a></li>
-                
-                    <li><a class="toctree-l4" href="#executerun_1">ExecuteRun</a></li>
-                
-                    <li><a class="toctree-l4" href="#executerunwithreturn_1">ExecuteRunWithReturn</a></li>
-                
-                    <li><a class="toctree-l4" href="#executeset_1">ExecuteSet</a></li>
-                
-                    <li><a class="toctree-l4" href="#executesetlist_1">ExecuteSetList</a></li>
-                
-				</ul>
-				
-            
-            </ul>
+            <li><a href="#using-the-soap-server-interface">Using the SOAP Server Interface</a></li>
         
-    </li>
-<li>
-          
-        </ul>
+            <li><a href="#client-proxy">Client Proxy</a></li>
+        
+    
+        <li class="main "><a href="#short-command-list">Short command list</a></li>
+        
+            <li><a href="#executeadd">ExecuteAdd</a></li>
+        
+            <li><a href="#executedelete">ExecuteDelete</a></li>
+        
+            <li><a href="#executeget">ExecuteGet</a></li>
+        
+            <li><a href="#executeinfo">ExecuteInfo</a></li>
+        
+            <li><a href="#executemacroset">ExecuteMacroSet</a></li>
+        
+            <li><a href="#executerun">ExecuteRun</a></li>
+        
+            <li><a href="#executerunbytearrayinput">ExecuteRunByteArrayInput</a></li>
+        
+            <li><a href="#executerunbytearrayoutput">ExecuteRunByteArrayOutput</a></li>
+        
+            <li><a href="#executerunwithreturn">ExecuteRunWithReturn</a></li>
+        
+            <li><a href="#executeset">ExecuteSet</a></li>
+        
+            <li><a href="#executesetlist">ExecuteSetList</a></li>
+        
+    
+        <li class="main "><a href="#commands-by-object-type">Commands by Object Type</a></li>
+        
+            <li><a href="#many">Many</a></li>
+        
+            <li><a href="#authgroup">AuthGroup</a></li>
+        
+            <li><a href="#ceipdata">CeipData</a></li>
+        
+            <li><a href="#cisdata">CisData</a></li>
+        
+            <li><a href="#collection">Collection</a></li>
+        
+            <li><a href="#device">Device</a></li>
+        
+            <li><a href="#disk">Disk</a></li>
+        
+            <li><a href="#disklocator">DiskLocator</a></li>
+        
+            <li><a href="#farm">Farm</a></li>
+        
+            <li><a href="#farmview">FarmView</a></li>
+        
+            <li><a href="#server">Server</a></li>
+        
+            <li><a href="#site">Site</a></li>
+        
+            <li><a href="#siteview">SiteView</a></li>
+        
+            <li><a href="#store">Store</a></li>
+        
+            <li><a href="#system">System</a></li>
+        
+            <li><a href="#task">Task</a></li>
+        
+            <li><a href="#updatetask">UpdateTask</a></li>
+        
+    
+        <li class="main "><a href="#mapireturn-returncode-and-exceptiontype">MapiReturn returnCode and exceptionType</a></li>
+        
+            <li><a href="#executeadd_1">ExecuteAdd</a></li>
+        
+            <li><a href="#executedelete_1">ExecuteDelete</a></li>
+        
+            <li><a href="#executeget_1">ExecuteGet</a></li>
+        
+            <li><a href="#executeinfo_1">ExecuteInfo</a></li>
+        
+            <li><a href="#executerun_1">ExecuteRun</a></li>
+        
+            <li><a href="#executerunwithreturn_1">ExecuteRunWithReturn</a></li>
+        
+            <li><a href="#executeset_1">ExecuteSet</a></li>
+        
+            <li><a href="#executesetlist_1">ExecuteSetList</a></li>
+        
+    
+    </ul>
+</div>
       </div>
       &nbsp;
     </nav>
@@ -16248,7 +16228,7 @@ List&lt;List&lt;KeyValuePair&lt;string, string&gt;&gt;&gt; records);
 </tbody>
 </table>
               
-               
+
             </div>
           </div>
 
@@ -16281,5 +16261,5 @@ List&lt;List&lt;KeyValuePair&lt;string, string&gt;&gt;&gt; records);
 
 <!--
 MkDocs version : 0.15.3
-Build Date UTC : 2016-12-14 17:22:04.478048
+Build Date UTC : 2016-12-19 06:35:49.038950
 -->
