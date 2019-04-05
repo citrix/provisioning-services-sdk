@@ -7,4 +7,4 @@ markdown_extensions:
   - toc
 
 pages:
-- PVS 7.12 SOAP Server Programmer’s Guide: index.md
+- PVS 1903 SOAP Server Programmer’s Guide: index.md
