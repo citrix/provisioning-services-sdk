@@ -55,3 +55,4 @@ markdown_extensions:
 
 nav:
 - Home: index.md
+- Short command list: short-command-list.md
