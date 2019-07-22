@@ -1108,7 +1108,7 @@ adMaxPasswordAge          Number of days before a password expires. Mi
 
 licenseTimeout            Amount of seconds before a license times out. Min=15, Max=300, Default=30
 
-vDiskCreatePacing         VDisk create time pacing in miliseconds. Min=0, Max=5, Default=0
+vDiskCreatePacing         VDisk create time pacing in milliseconds. Min=0, Max=5, Default=0
 
 firstPort                 Number of the first UDP port for use by the Stream Service, First and Last must allow at least 5 ports. Min=1025, Max=65534, Default=6910
 
@@ -2842,6 +2842,8 @@ writeCacheType            0 (Private), 1 (Cache on Server), 3 (Cache
 
 licenseMode               0 (None), 1 (Multiple Activation Key), or 2 (Key Management Service). Min=0, Max=2, Default=0
 
+accelerateOfficeActivation  Run script to activate office automatically.
+
 activeDate                Date to activate the disk if autoUpdateEnabled and activationDateEnabled are 1. Format is yyyy/mm/dd. Empty when the autoUpdateEnabled or activationDateEnabled are 0.
 
 longDescription           Description of the Disk. Max Length=399
@@ -3015,6 +3017,8 @@ printerManagementEnabled  Invalid printers will be deleted from the Device whe
 writeCacheType            0 (Private), 1 (Cache on Server), 3 (Cache in Device RAM), 4 (Cache on Device Hard Disk), 7 (Cache on Server, Persistent), 9 (Cache in Device RAM with Overflow on Hard Disk), 10 (Private async), 11(Server persistent async), 12 (Cache in Device RAM with Overflow on Hard Disk async) Min=0, Max=12, Default=0
 
 licenseMode               0 (None), 1 (Multiple Activation Key), or 2 (Key Management Service). Min=0, Max=2, Default=0
+
+accelerateOfficeActivation  Run script to activate office automatically.
 
 activeDate                Date to activate the disk if autoUpdateEnabled and activationDateEnabled are 1. Format is yyyy/mm/dd. Empty when the autoUpdateEnabled or activationDateEnabled are 0.
 
@@ -3856,7 +3860,7 @@ adMaxPasswordAge          Number of days before a password expires. Mi
 
 licenseTimeout            Amount of seconds before a license times out. Min=15, Max=300, Default=30
 
-vDiskCreatePacing         VDisk create time pacing in miliseconds. Min=0, Max=5, Default=0
+vDiskCreatePacing         VDisk create time pacing in milliseconds. Min=0, Max=5, Default=0
 
 firstPort                 Number of the first UDP port for use by the Stream Service, First and Last must allow at least 5 ports. Min=1025, Max=65534, Default=6910
 
@@ -3896,7 +3900,7 @@ adMaxPasswordAge          Number of days before a password expires. Mi
 
 licenseTimeout            Amount of seconds before a license times out. Min=15, Max=300, Default=30
 
-vDiskCreatePacing         VDisk create time pacing in miliseconds. Min=0, Max=5, Default=0
+vDiskCreatePacing         VDisk create time pacing in milliseconds. Min=0, Max=5, Default=0
 
 firstPort                 Number of the first UDP port for use by the Stream Service, First and Last must allow at least 5 ports. Min=1025, Max=65534, Default=6910
 
@@ -4196,7 +4200,7 @@ adMaxPasswordAge          Number of days before a password expires. Mi
 
 licenseTimeout            Amount of seconds before a license times out. Min=15, Max=300, Default=30
 
-vDiskCreatePacing         VDisk create time pacing in miliseconds. Min=0, Max=5, Default=0
+vDiskCreatePacing         VDisk create time pacing in milliseconds. Min=0, Max=5, Default=0
 
 firstPort                 Number of the first UDP port for use by the Stream Service, First and Last must allow at least 5 ports. Min=1025, Max=65534, Default=6910
 
@@ -4236,7 +4240,7 @@ adMaxPasswordAge          Number of days before a password expires. Mi
 
 licenseTimeout            Amount of seconds before a license times out. Min=15, Max=300, Default=30
 
-vDiskCreatePacing         VDisk create time pacing in miliseconds. Min=0, Max=5, Default=0
+vDiskCreatePacing         VDisk create time pacing in milliseconds. Min=0, Max=5, Default=0
 
 firstPort                 Number of the first UDP port for use by the Stream Service, First and Last must allow at least 5 ports. Min=1025, Max=65534, Default=6910
 
@@ -7600,6 +7604,8 @@ writeCacheType            0 (Private), 1 (Cache on Server), 3 (Cache
 
 licenseMode               0 (None), 1 (Multiple Activation Key), or 2 (Key Management Service). Min=0, Max=2, Default=0
 
+accelerateOfficeActivation  Run script to activate office automatically.
+
 activeDate                Date to activate the disk if autoUpdateEnabled and activationDateEnabled are 1. Format is yyyy/mm/dd. Empty when the autoUpdateEnabled or activationDateEnabled are 0.
 
 longDescription           Description of the Disk. Max Length=399
@@ -7854,7 +7860,7 @@ adMaxPasswordAge          Number of days before a password expires. Mi
 
 licenseTimeout            Amount of seconds before a license times out. Min=15, Max=300, Default=30
 
-vDiskCreatePacing         VDisk create time pacing in miliseconds. Min=0, Max=5, Default=0
+vDiskCreatePacing         VDisk create time pacing in milliseconds. Min=0, Max=5, Default=0
 
 firstPort                 Number of the first UDP port for use by the Stream Service, First and Last must allow at least 5 ports. Min=1025, Max=65534, Default=6910
 
