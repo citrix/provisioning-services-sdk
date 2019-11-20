@@ -1,5 +1,5 @@
-site_name: Citrix Provisioning 1909 SOAP Server Programmer's Guide
-site_description: Programmer's Guide for Citrix Provisioning 1909 SOAP Server
+site_name: Citrix Provisioning Services 7.12 SOAP Server Programmer's Guide
+site_description: Programmer's Guide for Citrix Provisioning Services 7.12 SOAP Server
 site_title: Developer Docs
 
 # Copyright
@@ -54,7 +54,4 @@ markdown_extensions:
   - extra
 
 nav:
-- Introduction: index.md
-- Short command list: short-command-list.md
-- Commands by object type: commands-by-object-type.md
-- MapiReturn returnCode and exceptionType: mapireturn.md
+- PVS 7.12 SOAP Server Programmer’s Guide: index.md
