@@ -938,7 +938,7 @@ bdmFormat                 1 use VHD for BDMboot, 2 use ISO, 3 u
 
 bdmUpdated                Timestamp of the last BDM boot disk update. Default=null
 
-bdmCreated                Timstamp when BDM device was created  Default=null
+bdmCreated                Timestamp when BDM device was created  Default=null
 
 xsPvsProxyUuid            UUID of XenServer PVS\_proxy Default=null Length=36
 
@@ -2322,7 +2322,7 @@ bdmFormat                 1 use VHD for BDMboot, 2 use ISO, 3 u
 
 bdmUpdated                Timestamp of the last BDM boot disk update. Default=null
 
-bdmCreated                Timstamp when BDM device was created  Default=null
+bdmCreated                Timestamp when BDM device was created  Default=null
 
 xsPvsProxyUuid            UUID of XenServer PVS\_proxy Default=null Length=36
 
@@ -2622,7 +2622,7 @@ logLevel                  Level to perform logging at. Values 
 
 domainName                Fully qualified name of the domain that the Device belongs to. Do not set this field, it is only set internally by PVS. Default=null Max Length=255
 
-domainObjectSID          nbsp; The value of the objectSID AD attribute of the same name for the Device's computer account. Do not set this field, it is only set internally by PVS. Default=null Max Length=186
+domainObjectSID         &nbsnbsp; The value of the objectSID AD attribute of the same name for the Device's computer account. Do not set this field, it is only set internally by PVS. Default=null Max Length=186
 
 domainControllerName      The name of the DC used to create the host's computer account. Do not set this field, it is only set internally by PVS. Default=null Max Length=4000
 
@@ -2648,7 +2648,7 @@ bdmFormat                 1 use VHD for BDMboot, 2 use ISO, 3 u
 
 bdmUpdated                Timestamp of the last BDM boot disk update. Default=null
 
-bdmCreated                Timstamp when BDM device was created  Default=null
+bdmCreated                Timestamp when BDM device was created  Default=null
 
 xsPvsProxyUuid            UUID of XenServer PVS\_proxy Default=null Length=36
 
@@ -3580,7 +3580,7 @@ One of these optional
 
 version                   Specific Version to Get.
 
-type                  nbsp;    When set to 1, get the Maintenance or MaintenanceHighestVersion access version if it exists. When set to 2, get the Test access versions if any exist. When set to 3, get the Override access version if it exists.
+type                 &nnbsp;    When set to 1, get the Maintenance or MaintenanceHighestVersion access version if it exists. When set to 2, get the Test access versions if any exist. When set to 3, get the Override access version if it exists.
 
 One of these resolutions when needed
 
@@ -5686,7 +5686,7 @@ storeName                 Name of the Store that is needed when
 
 Enable a DiskLocator so Devices that have it assigned will make it available, if the Device DiskLocator itself is not set to be Disabled.
 
-parameters &nnbsp;                Parameters needed for this Run.
+parameters nbsp;                 Parameters needed for this Run.
 
 This required
 
@@ -7394,7 +7394,7 @@ uuid                      CEIP UUID of this Farm. This is 
 
 record                      Record containing the new values for fields to be changed.
 
-enabled                &nbsnbsp;  1 if CEIP is enabled, otherwise 0. Min=0, Max=1
+enabled                   1 if CEIP is enabled, otherwise 0. Min=0, Max=1
 
 nextUpload                Date and time next CEIP upload is due if enabled is 1. Default=null
 
@@ -7550,7 +7550,7 @@ bdmFormat                 1 use VHD for BDMboot, 2 use ISO, 3 u
 
 bdmUpdated                Timestamp of the last BDM boot disk update. Default=null
 
-bdmCreated                Timstamp when BDM device was created  Default=null
+bdmCreated                Timestamp when BDM device was created  Default=null
 
 xsPvsProxyUuid            UUID of XenServer PVS\_proxy Default=null Length=36
 
@@ -8412,7 +8412,7 @@ parameters                  Parameters needed to identify the 
 
 One of these required
 
-deviceId            nbsp;      GUID of the Device.
+deviceId           &nnbsp;      GUID of the Device.
 
 deviceName                Name of the Device.
 
