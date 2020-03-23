@@ -5,7 +5,7 @@ site_url: https://developer-docs.citrix.com
 
 
 # Copyright
-copyright: 'Copyright &copy; 1999-2019 Citrix Systems, Inc. All rights reserved. '
+copyright: 'Copyright &copy; 1999-2020 Citrix Systems, Inc. All rights reserved. '
 
 extra_css:
   - 'assets/stylesheets/extra.css'
@@ -31,7 +31,7 @@ theme:
     primary: white
     accent: blue
   font: false
-  favicon: /media/favicon.ico
+  favicon: https://citrix.com/favicon.ico
   logo: https://developer-docs.citrix.com/_static/Citrix_Logo_Black.png
 
 # Customization
@@ -56,6 +56,11 @@ markdown_extensions:
   - extra
 
 nav:
+- Versions:
+  - latest: https://developer-docs.citrix.com/projects/provisioning-services-sdk/en/latest/
+  - 1912: https://developer-docs.citrix.com/projects/provisioning-services-sdk/en/1912/
+  - 1906: https://developer-docs.citrix.com/projects/provisioning-services-sdk/en/1906/
+  - 1903: https://developer-docs.citrix.com/projects/provisioning-services-sdk/en/1903/
 - Introduction: index.md
 - Short command list: short-command-list.md
 - Commands by object type: commands-by-object-type.md
