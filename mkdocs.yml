@@ -64,7 +64,11 @@ plugins:
   - search:
       separator: '[\s\-\.]+'
 
-nav:
+- Versions:
+  - latest: https://developer-docs.citrix.com/projects/provisioning-services-sdk/en/latest/
+  - 1912: https://developer-docs.citrix.com/projects/provisioning-services-sdk/en/1912/
+  - 1909: https://developer-docs.citrix.com/projects/provisioning-services-sdk/en/1909/
+  - 1903: https://developer-docs.citrix.com/projects/provisioning-services-sdk/en/1903/
 - Introduction: index.md
 - Short command list: short-command-list.md
 - Commands by object type: commands-by-object-type.md
